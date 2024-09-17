@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Text-preset1';
+    src: url('assets/fonts/static/Inter-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Text-preset2';
+    src: url('assets/fonts/static/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Text-preset2-bold';
+    src: url('assets/fonts/static/Inter-Bold.ttf');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #141414;
+    width: 90rem;
+    height: 60rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border-radius: 12px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: #1f1f1f;
+    padding: 40px;
+    height: auto;
+    width: 24rem;
+    .profile-image {
+        display: flex;
+        justify-content: center;
+        width: 5.5rem;
+        height: 5.5rem;
+        
+        img {
+            border-radius: 999px;
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .information {
+        padding: 24px 0px 24px 0px;
+        width: auto;
+        height: auto;
+        margin: 0px;
+        h1 {
+            font-family: 'Text-preset1';
+            color: #ffffff;
+            font-size: 24px;
+            line-height: 1.5;
+            margin-top: 0px;
+            margin-bottom: 4px;
+        }
+        h2 {
+            font-family: 'Text-preset2-bold';
+            color: #c4f82a;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: center;
+            margin: 0px;
+        }
+    }
+    .description {
+        font-family: 'Text-preset2';
+        font-size: 14px;
+        color: white;
+        p {
+            margin: 0px;
+        }
+    }
+    .social-link {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 24px;
+        a {
+            font-size: 14px;
+            font-family: 'Text-preset2';
+            margin: 0px;
+            padding: 14px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background-color: #333333;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        a:hover {
+            color: #333333;
+            background-color: #c4f82a;
+            transition: color 0.8s ease, background-color 0.8s ease;
+        }
+        .ig {
+            margin-bottom: 0px;
+        }
+    }
+
+}
+
+.attribution {
+    color: white;
+    text-align: center;
+    padding: 50px;
+    a {
+        color: #c4f82a;
+        text-decoration: none;
+    }
+    a:hover {
+        font-weight: 1000;
+    }
+}
